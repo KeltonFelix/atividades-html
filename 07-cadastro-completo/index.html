@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Completo</title>
+
+    <style>
+        form {
+            width: 100%;
+            max-width: 900px;
+            margin: 80px auto;
+        }
+        fieldset { border-radius: 8px; }
+        * { box-sizing: border-box; }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <fieldset>
+            <legend><strong> Dados Pessoais </strong></legend>
+            Nome: <input type="text" name="nome" placeholder="Digite seu nome!" required><br><br>
+            Nascimento: <input type="date" name="nascimento" required><br><br>
+            RG: <input type="text" name="rg" placeholder="Digite seu RG:" required><br><br>
+            CPF: <input type="text" name="cpf" placeholder="Digite seu CPF:" required>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong> Dados de Endereço </strong></legend>
+            Rua: <input type="text" name="rua" placeholder="Digite o nome de sua Rua!">
+            Número: <input type="text" name="numero" placeholder="Digite o número residencial!"><br><br>
+            Bairro: <input type="text" name="bairro" placeholder="Digite o nome do seu bairro!"><br><br>
+            Estado:
+            <select name="estado">
+                <option value=""> Selecione o estado: </option>
+                <option value="SP" selected> São Paulo </option>
+                <option value="RJ"> Rio de Janeiro </option>
+                <option value="MG"> Minas Gerais </option>
+                <option value="ES"> Espírito Santo </option>
+            </select>
+
+            Cidade: <input type="text" name="cidade" placeholder="Digite o nome de sua cidade!"><br><br>
+            <label for="cep_1">CEP:</label>
+            <input type="text" id="cep_1" name="cep_1" size="2" pattern="\d{5}" maxlength="5">
+            <span> - </span>
+            <input type="text" name="cep_2" size="1" pattern="\d{3}" maxlength="3">
+        </fieldset>
+
+        <fieldset>
+            <legend><strong> Dados de Login </strong></legend>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email aqui!" required><br><br>
+            <label for="imagem_perfil">Imagem de Perfil:</label>
+            <input type="file" name="imagem_perfil" id="imagem_perfil" accept="image/*"><br><br>
+            <label for="login_usuario">Login de Usuário:</label>
+            <input type="text" name="login" id="login_usuario" placeholder="Digite seu usuário:" required><br><br>
+            <label for="senha_usuario">Senha:</label>
+            <input type="password" name="senha" id="senha_usuario" placeholder="Digite sua senha:" required><br><br>
+            <label for="confirmar_senha">Confirmar Senha:</label>
+            <input type="password" name="confirmar" id="confirmar_senha" placeholder="Confirmar Senha:" required><br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+    </form>
+
+</body>
+</html>

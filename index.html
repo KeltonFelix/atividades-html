@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades HTML — Kelton</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #26b097 0%, #55728b 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #26b097;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+        ul { list-style: none; }
+        li {
+            margin: 12px 0;
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border-left: 4px solid #26b097;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+        li:hover {
+            background: #e8f7f4;
+            transform: translateX(5px);
+        }
+        a {
+            text-decoration: none;
+            color: #26b097;
+            font-weight: 600;
+            font-size: 17px;
+        }
+        a:hover { color: #1a806e; }
+        small {
+            display: block;
+            color: #777;
+            font-weight: normal;
+            margin-top: 4px;
+            font-size: 13px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #999;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📋 Minhas Atividades HTML</h1>
+        <p class="subtitle">Coleção de exercícios desenvolvidos durante o curso de Desenvolvimento Web</p>
+
+        <ul>
+            <li>
+                <a href="01-perfil-pessoal/">👤 Perfil Pessoal</a>
+                <small>Página com apresentação, hobbies e redes sociais</small>
+            </li>
+            <li>
+                <a href="02-esporte-e-vida/">⚽ Esporte é Vida</a>
+                <small>Página informativa sobre a prática de esportes</small>
+            </li>
+            <li>
+                <a href="03-desenvolvimento-web/">💻 Desenvolvimento Web</a>
+                <small>Página inicial de disciplina</small>
+            </li>
+            <li>
+                <a href="04-cadastro-aluno/">🎓 Cadastro de Aluno</a>
+                <small>Formulário com dados pessoais, endereço e informações acadêmicas</small>
+            </li>
+            <li>
+                <a href="05-formulario-aluno/">📝 Formulário de Aluno</a>
+                <small>Dados pessoais + natureza do curso e áreas de interesse</small>
+            </li>
+            <li>
+                <a href="06-formulario-contato/">✉️ Formulário de Contato</a>
+                <small>Nome, email e mensagem</small>
+            </li>
+            <li>
+                <a href="07-cadastro-completo/">🔐 Cadastro Completo</a>
+                <small>Endereço, login e senha com validação de CEP</small>
+            </li>
+            <li>
+                <a href="08-ficha-cadastro/">📄 Ficha de Cadastro</a>
+                <small>Formulário extenso com múltiplos campos e newsletter</small>
+            </li>
+        </ul>
+
+        <footer>
+            Desenvolvido por <strong>Kelton</strong> · Professor: KIM Rodrigues
+        </footer>
+    </div>
+</body>
+</html>

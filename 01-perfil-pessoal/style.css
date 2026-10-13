@@ -1,0 +1,115 @@
+body {
+    background-color: #d3d3d3;
+    margin: 0;
+    padding: 0;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    background-color: #26b097;
+    width: 100%;
+    height: 130px;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* FOTO */
+.foto {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* NOME */
+h1 {
+    position: absolute;
+    top: 25px;
+    left: 120px;
+    margin: 0;
+    font-size: 28px;
+    color: black;
+}
+
+.info1{
+    position: absolute;
+    top: 58px;
+    left: 120px;
+    margin: 0;
+    font-size: 21px;
+    color: black;
+}
+
+.info2{
+    position: absolute;
+    top: 84px;
+    left: 120px;
+    margin: 0;
+    font-size: 21px;
+    color: black;
+}
+
+/* TÍTULO DO CABEÇALHO */
+.titulo-cabecalho {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ÁREA PRINCIPAL */
+main {
+    padding: 40px 20px;
+}
+
+/* PARÁGRAFO */
+p {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #000000;
+    background-color: #26b097;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* LISTA */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li:first-child {
+    list-style: disc;
+    margin-left: 30px;
+}
+
+ul li:first-child::before {
+    content: "";
+}
+
+ul li:not(:first-child)::before {
+    content: "— ";
+}
+
+/* LINK */
+a {
+    display: block;
+    text-align: justify;
+    font-size: 15px;
+    margin-top: 20px;
+}

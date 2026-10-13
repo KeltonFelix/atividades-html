@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Cadastro</title>
+
+    <style>
+        form {
+            width: 100%;
+            max-width: 900px;
+            margin: 80px auto;
+        }
+        fieldset { border-radius: 8px; }
+        * { box-sizing: border-box; }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="tel"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 8px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .checkbox-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px 20px;
+            margin: 15px 0;
+        }
+
+        .checkbox-grid label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-weight: normal;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome preferencial:" required>
+
+            <label for="nome_completo">Nome Completo:</label>
+            <input type="text" name="nome_completo" id="nome_completo" placeholder="Digite seu nome completo:" required>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF:" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email:" required>
+
+            <label for="web_site">WebSite:</label>
+            <input type="url" name="web_site" id="web_site" placeholder="Digite seu website:">
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" id="endereco" placeholder="Digite seu endereço:" required>
+
+            <label for="bairro">Bairro:</label>
+            <input type="text" name="bairro" id="bairro" placeholder="Digite seu bairro:" required>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade:" required>
+
+            <label for="cep">CEP:</label>
+            <input type="text" name="cep" id="cep" placeholder="Digite seu CEP:" required>
+
+            <label for="uf">UF:</label>
+            <select name="uf" id="uf">
+                <option value="SP">SP-São Paulo</option>
+                <option value="RJ">RJ-Rio de Janeiro</option>
+                <option value="MG">MG-Minas Gerais</option>
+                <option value="CE">CE-Ceará</option>
+                <option value="BA">BA-Bahia</option>
+            </select>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone:" required>
+
+            <label for="data_nasci">Data de Nascimento:</label>
+            <input type="date" name="data_nasci" id="data_nasci" required>
+
+            <label>Sexo:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="sexo" value="M"> Masculino</label>
+                <label><input type="radio" name="sexo" value="F"> Feminino</label>
+            </div>
+
+            <label for="celular">Celular:</label>
+            <input type="tel" name="celular" id="celular" placeholder="Digite seu celular:" required>
+
+            <label for="estado_civil">Estado Civil:</label>
+            <select name="estado_civil" id="estado_civil">
+                <option value="solteiro">Solteiro</option>
+                <option value="casado">Casado</option>
+                <option value="divorciado">Divorciado</option>
+                <option value="viuvo">Viúvo</option>
+            </select>
+
+            <label for="login">Login:</label>
+            <input type="text" name="login" id="login" placeholder="Digite seu login:" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha:" required>
+
+            <label>Deseja receber informações sobre os seguintes assuntos abaixo:</label>
+
+            <div class="checkbox-grid">
+                <label><input type="checkbox" name="assunto1"> Tecnologia</label>
+                <label><input type="checkbox" name="assunto2"> Esportes</label>
+                <label><input type="checkbox" name="assunto3"> Automóveis</label>
+                <label><input type="checkbox" name="assunto4"> Culinária</label>
+                <label><input type="checkbox" name="assunto5"> Política</label>
+                <label><input type="checkbox" name="assunto6"> Policial</label>
+                <label><input type="checkbox" name="assunto7"> Tempo</label>
+                <label><input type="checkbox" name="assunto8"> Cultura</label>
+                <label><input type="checkbox" name="assunto9"> Economia</label>
+                <label><input type="checkbox" name="assunto10"> Jogos</label>
+                <label><input type="checkbox" name="assunto11"> Educação</label>
+                <label><input type="checkbox" name="assunto12"> Viagem</label>
+                <label><input type="checkbox" name="assunto13"> Empregos</label>
+                <label><input type="checkbox" name="assunto14"> Moda e Estilo</label>
+            </div>
+
+            <input type="submit" value="Confirmar">
+            <input type="reset" value="Retornar">
+        </fieldset>
+    </form>
+</body>
+</html>
